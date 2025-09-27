@@ -128,7 +128,7 @@ function processData(
     }
     {
         return config.reverse
-            ? input.split("").reverse().join("")
+            ? input.split("").reverse().join("").toUpperCase()
             : input.toUpperCase();
     }
 }
