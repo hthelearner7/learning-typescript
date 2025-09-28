@@ -1,7 +1,7 @@
-// export type User = {id:number; name:string;isActive:boolean} // you can even export it
+export type User1 = { id: number; name: string; isActive: boolean }; // you can even export it
 
 // type alias
-export type User = { id: number; name: string; isActive: boolean };
+type User = { id: number; name: string; isActive: boolean };
 
 const john: User = {
     id: 1,
