@@ -80,3 +80,50 @@ let bob: Manager = { id: 3, name: "alice", employees: [alice, steve] };
 
 printStaffDetails(alice);
 printStaffDetails(bob);
+
+type Book = { id: number; name: string; price: number };
+
+const book1: Book = {
+    id: 1,
+    name: "how to cook veggies",
+    price: 18,
+};
+
+const book2: Book = {
+    id: 2,
+    name: "how to cook paneer",
+    price: 28,
+};
+
+const discountedBook: Book & { discount: number } = {
+    id: 2,
+    name: "how to cook paneer",
+    price: 28,
+    discount: 5,
+};
+
+type DiscountedBook = Book & { discount: number };
+
+const discountedBook1: DiscountedBook = {
+    id: 2,
+    name: "how to cook paneer",
+    price: 28,
+    discount: 5,
+};
+
+// computed properties in alias
+
+const propName = "age";
+
+let tiger = { [propName]: 5 };
+console.log(tiger);
+
+const propName1 = "name";
+
+type Animal = {
+    [propName]: number;
+    [propName1]: string;
+};
+
+let elephant: Animal = { [propName]: 15, [propName1]: "jumbo" };
+console.log(elephant);
