@@ -35,6 +35,7 @@ const employee: Person | DogOwner | Manager = getEmployee();
 console.log(employee);
 // console.log(typeof employee);
 
+// * type predicates
 // * “If this function returns true, then you can safely treat obj as a Manager inside that scope.”
 function isManager(obj: Person | Manager | DogOwner): obj is Manager {
     // typeof will return type as object
