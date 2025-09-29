@@ -1,4 +1,4 @@
-import "./tutorial5.ts";
+import "./tutorial6.ts";
 
 document.querySelector<HTMLDivElement>("#app")!.innerHTML = `
   <div>
