@@ -1,3 +1,5 @@
+// Generics - Create Generic Function and Interface
+
 console.log("generics");
 
 // const array1: string[] = ["apple", "mango", "banana", "pineapple"];
@@ -38,3 +40,17 @@ const genericString: GenericInterface<string> = {
     },
 };
 console.log(genericString.getValue());
+
+async function someFunc(): Promise<string> {
+    return "hello world";
+}
+
+const res = someFunc();
+console.log("res => ", res);
+
+async function someNumber(): Promise<number> {
+    return 1234;
+}
+
+const res2 = someNumber();
+console.log("res2 => ", res2);
