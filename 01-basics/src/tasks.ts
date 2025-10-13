@@ -47,6 +47,7 @@ function renderTask(task: Task): void {
     // listen to change event on checkbox
     // attaching a permanent event listener
     // That listener function is stored in memory and will remain active as long as that checkbox element exists in the DOM.
+    // This is because the listener is registered on the DOM element, not on the function.
     taskCheckbox.addEventListener("change", () => {
         task.isCompleted = !task.isCompleted;
         updateStorage();
