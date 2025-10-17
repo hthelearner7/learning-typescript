@@ -37,13 +37,4 @@ I integrated TypeScript into React applications, learning how to:
 -   Build complex component structures with strict type safety.
 -   Utilize **localStorage** and manage task states in a real-world task management app.
 
-### 🔹 Final Project
-
-As a culmination of the course, I built a **modern store application** using:
-
--   **React + TypeScript**
--   **Shadcn/UI** for a clean, modern design system
--   **React Router** for navigation
--   **Authentication** and **pagination** features for a complete full-stack experience
-
 ---
