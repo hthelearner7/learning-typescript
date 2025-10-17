@@ -1,14 +1,11 @@
 // import Component from "./starter/01-return";
-import Component from "./starter/02-props";
+// import Component from "./starter/02-props";
+import Component from "./starter/03-state";
 
 function App() {
     return (
         <main>
-            <Component name="peter" id={123}>
-                <h2>i am a heading passed as a child component</h2>
-            </Component>
-            <hr />
-            <Component name="jack" id={234} />
+            <Component />
         </main>
     );
 }
