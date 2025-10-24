@@ -14,15 +14,21 @@ function Component(props: ProfileType) {
     const alertType = type === "basic" ? "success" : "danger";
     const className = `alert alert-${alertType}`;
 
+    if (type === "basic") {
+        return (
+            <article className={className}>
+                <h2>user : {name}</h2>
+            </article>
+        );
+    }
+
     return (
         <div>
             <h2>React & Typescript</h2>
             <h2>Challenge</h2>
             <article className={className}>
                 <h2>user : {name}</h2>
-                {type === "advanced" && props.email && (
-                    <h2>email : {props.email}</h2>
-                )}
+                <h2>email : {props.email}</h2>
             </article>
         </div>
     );
