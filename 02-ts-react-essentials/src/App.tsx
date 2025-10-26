@@ -6,8 +6,9 @@
 // import Component from "./starter/07-reducers";
 // import Component from "./starter/08-fetch-data/01-without-react-query";
 // import Component from "./starter/08-fetch-data/02-with-react-query";
+// import Component from "./starter/09-rtk";
 
-import Component from "./starter/09-rtk";
+import Component from "./starter/10-tasks";
 
 function App() {
     return (
